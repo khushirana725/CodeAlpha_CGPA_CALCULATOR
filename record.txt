@@ -1,0 +1,19 @@
+STUDENT NAME: KHUSHI
+
+SEMESTER 1
+SUBJECT                                 GRADE       CREDIT      GRADE POINT    CREDIT POINT   
+---------------------------------------------------------------------
+PHYSICS-I                                A           2.00        7.20           14.40          
+PHYSICS-I LAB                            A+          2.00        8.00           16.00          
+MATHEMATICS-I                            B+          4.00        6.20           24.80          
+BASIC ELECTRICAL ENGINEERING             A+          4.00        8.40           33.60          
+BASIC ELECTRICAL ENGINEERING LAB         A+          1.00        8.80           8.80           
+ENGINEEING GRAPHICS & DESIGN             B+          1.00        6.80           6.80           
+ENGINEERING GRAPHICS & DESIGN LAB        O           2.00        9.00           18.00          
+PROGRAMMING FOR PROBLEM SOLVING          A+          3.00        8.40           25.20          
+PROGRAMMING FOR PROBLEM SOLVING LAB      O           1.00        9.40           9.40           
+DESIGN THINKING & IDEA LAB WORKSHOP      A+          3.00        8.60           25.80          
+DESIGN THINKING & IDEA LAB WORKSHOP-LAB  O           1.00        9.00           9.00           
+
+SGPA: 7.99
+CGPA: 7.99

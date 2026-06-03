@@ -42,6 +42,8 @@ class Subject{
       float getGradePoint() const{return gradePoint;};
       float getCredit() const{return credit;};
       float getCreditPoint() const{return credit*gradePoint;};
+      string getSubName()const {return subName;};
+      string getSubGrade()const {return subGrade;};
 };
 
 // A data member function named INPUT is created to get input from user
@@ -146,9 +148,29 @@ int main(){
 
         for(int i=0;i<n;i++){
             s[i].display();
-            semPoint+=s[i].getGradePoint()*s[i].getCredit();
+            semPoint+=s[i].getCreditPoint();
             semCredit+=s[i].getCredit();
             cout<<endl;
+        }
+        fout << "\nSEMESTER " << sem << endl;
+        fout << left
+             << setw(35) << "SUBJECT"
+             << setw(12) << "GRADE"
+             << setw(12) << "CREDIT"
+             << setw(15) << "GRADE POINT"
+             << setw(15) << "CREDIT POINT"
+             << endl;
+
+        fout << "---------------------------------------------------------------------\n";
+
+        for(int i=0;i<n;i++){
+            fout << left
+                 << setw(35) << s[i].getSubName()
+                 << setw(12) << s[i].getSubGrade()
+                 << setw(12) << s[i].getCredit()
+                 << setw(15) << s[i].getGradePoint()
+                 << setw(15) << s[i].getCreditPoint()
+                 << endl;
         }
 //here the condition will check for any exception created via semesterCredit  
         
@@ -161,8 +183,7 @@ int main(){
         totalPoint+=semPoint;
         totalCredit+=semCredit;
         
-        fout<<"\nSEMESTER "<<sem<<endl;
-        fout<<"SGPA: "<<gpa<<endl;
+        fout<<"\nSGPA: "<<gpa<<endl;
 
         sem++;
     }
