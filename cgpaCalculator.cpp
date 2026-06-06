@@ -84,8 +84,8 @@ void Subject::assignGrade(){
 
 void Subject::display() const{
     cout<<left
-        <<setw(35)<<subName
-        <<setw(12)<<subGrade
+        <<setw(45)<<subName
+        <<setw(12)<<subGrade                                                 // to display the subject data in form of a table 
         <<setw(12)<<credit
         <<setw(15)<<gradePoint
         <<setw(15)<<getCreditPoint()
@@ -96,6 +96,7 @@ void Subject::display() const{
 int main(){
     string studentName;
     cout<<"ENTER STUDENT NAME: ";
+
     getline(cin,studentName);
 
     cout<<fixed<<setprecision(2);
@@ -131,12 +132,12 @@ int main(){
 //loop to get input from the user
 
         for(int i=0;i<n;i++){
-            cout<<"ENTER THE DETAILS FOR SUBJECT "<<i+1<<endl;
+            cout<<"\nENTER THE DETAILS FOR SUBJECT "<<i+1<<endl;
             s[i].input();}
         
         cout<<"\n--------------------------------------------------------------\n";
         cout<<left
-            <<setw(35)<<"SUBJECT"
+            <<setw(45)<<"SUBJECT"
             <<setw(12)<<"GRADE"
             <<setw(12)<<"CREDIT"
             <<setw(15)<<"GRADE POINT"
@@ -154,9 +155,9 @@ int main(){
         }
         fout << "\nSEMESTER " << sem << endl;
         fout << left
-             << setw(35) << "SUBJECT"
+             << setw(45) << "SUBJECT"
              << setw(12) << "GRADE"
-             << setw(12) << "CREDIT"
+             << setw(12) << "CREDIT"                                       //FORMATTING OF DATA IN FORM OF A TABLE HEREVA HEADER ROW WILLL BE FORMED
              << setw(15) << "GRADE POINT"
              << setw(15) << "CREDIT POINT"
              << endl;
@@ -165,10 +166,10 @@ int main(){
 
         for(int i=0;i<n;i++){
             fout << left
-                 << setw(35) << s[i].getSubName()
+                 << setw(45) << s[i].getSubName()
                  << setw(12) << s[i].getSubGrade()
                  << setw(12) << s[i].getCredit()
-                 << setw(15) << s[i].getGradePoint()
+                 << setw(15) << s[i].getGradePoint()                      //HERE WE ARE PASSING DATA FOR TABLE COLUMNS RESPECTIVELY
                  << setw(15) << s[i].getCreditPoint()
                  << endl;
         }
